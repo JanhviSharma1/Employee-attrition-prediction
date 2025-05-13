@@ -16,7 +16,7 @@ This project aims to predict whether an employee will leave the organization usi
 - **Pandas** – Data handling and cleaning
 - **Scikit-learn** – Model training, evaluation, preprocessing
 - **Matplotlib & Seaborn** – Data visualization
-- **Joblib & Pickle** – Model serialization
+- **Pickle** – Model serialization
 - **Jupyter Notebook / Python Script** – Development environment
 
 
@@ -37,15 +37,14 @@ This project aims to predict whether an employee will leave the organization usi
    - Used `classification_report` and `confusion_matrix` for model evaluation
 
 4. **Model Serialization**
-   - Saved final model and scaler using both `joblib` and `pickle` for future use
+   - Saved final model and scaler using `pickle` for future use
 
+5. **Visialization**
+   -Using Seaborn to vizualize top 15 features influencing employee attrition.
+   
+## Requirements
 
-## Key Insights
+```bash
+pip install numpy pandas scikit-learn seaborn
 
-- Top predictors of attrition include:
-  - **OverTime**
-  - **MonthlyIncome**
-  - **JobRole**
-  - **YearsAtCompany**
-- Logistic Regression provided the best balance between accuracy and interpretability.
 
